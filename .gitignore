@@ -1,0 +1,7 @@
+runs/
+runs-archive/
+runs-final.log
+final-*.txt
+/*.log
+/*-analysis.txt
+/*-tradeoff.txt

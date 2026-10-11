@@ -1,0 +1,38 @@
+Fitted per arm (means over compactions in the runs)
+arm | runs | compactions | kept ratio | compaction $ | compaction s | growth tok/msg | rereads/compaction | reread tok/compaction | repeats/compaction
+builtin | 24 | 25 | 0.42 | 0.094 | 24.9 | 6141 | 1.8 | 1301 | 1.3
+jetcompact | 24 | 24 | 0.57 | 0.000 | 0.6 | 6141 | 0.0 | 2 | 0.4
+jetcompact:algorithmic | 24 | 26 | 0.58 | 0.000 | 0.4 | 6141 | 0.9 | 891 | 0.3
+
+1-hour cache, no pause over an hour: projected 400-message session, 200k window (cost $, compaction seconds, compactions)
+arm | trigger 50% | 60% | 75% | 90%
+builtin | $43.23 1022s x41 | $43.78 848s x34 | $45.24 673s x27 | $46.64 549s x22
+jetcompact | $46.37 33s x54 | $48.33 28s x45 | $50.80 21s x35 | $53.24 18s x29
+jetcompact:algorithmic | $50.38 21s x56 | $51.20 18s x48 | $53.85 14s x38 | $56.14 12s x31
+Context kept per compaction, swept at a 60% trigger (cost $, compactions)
+re-reads after a compaction | 0.3 | 0.4 | 0.5 | 0.6 | 0.7
+as measured for JetCompact | $33.69 x28 | $37.68 x32 | $43.33 x39 | $50.93 x48 | $63.46 x64
+as measured for the built-in summary | $35.22 x28 | $39.71 x32 | $46.16 x39 | $54.92 x48 | $69.53 x66
+5x the built-in summary | $41.25 x30 | $48.00 x35 | $57.82 x43 | $72.50 x55 | $98.68 x77
+
+5-minute cache, no pause over 5 minutes: projected 400-message session, 200k window (cost $, compaction seconds, compactions)
+arm | trigger 50% | 60% | 75% | 90%
+builtin | $33.61 1022s x41 | $34.25 848s x34 | $35.78 673s x27 | $37.32 549s x22
+jetcompact | $33.79 33s x54 | $35.73 28s x45 | $38.35 21s x35 | $40.88 18s x29
+jetcompact:algorithmic | $36.97 21s x56 | $37.96 18s x48 | $40.66 14s x38 | $43.11 12s x31
+Context kept per compaction, swept at a 60% trigger (cost $, compactions)
+re-reads after a compaction | 0.3 | 0.4 | 0.5 | 0.6 | 0.7
+as measured for JetCompact | $25.84 x28 | $28.61 x32 | $32.41 x39 | $37.44 x48 | $45.55 x64
+as measured for the built-in summary | $27.26 x28 | $30.49 x32 | $35.02 x39 | $41.09 x48 | $50.95 x66
+5x the built-in summary | $32.78 x30 | $38.07 x35 | $45.68 x43 | $56.98 x55 | $76.99 x77
+
+5-minute cache, a pause over 5 minutes every 15 messages: projected 400-message session, 200k window (cost $, compaction seconds, compactions)
+arm | trigger 50% | 60% | 75% | 90%
+builtin | $40.03 1022s x41 | $41.86 848s x34 | $45.54 673s x27 | $48.68 549s x22
+jetcompact | $40.54 33s x54 | $44.11 28s x45 | $48.82 21s x35 | $53.59 18s x29
+jetcompact:algorithmic | $44.24 21s x56 | $46.39 18s x48 | $51.19 14s x38 | $55.82 12s x31
+Context kept per compaction, swept at a 60% trigger (cost $, compactions)
+re-reads after a compaction | 0.3 | 0.4 | 0.5 | 0.6 | 0.7
+as measured for JetCompact | $32.56 x28 | $36.06 x32 | $40.96 x39 | $46.07 x48 | $54.65 x64
+as measured for the built-in summary | $34.14 x28 | $38.12 x32 | $43.78 x39 | $49.99 x48 | $60.10 x66
+5x the built-in summary | $40.00 x30 | $45.99 x35 | $54.08 x43 | $65.85 x55 | $87.01 x77

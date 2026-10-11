@@ -1,0 +1,1 @@
+Read every .ts file in this directory one at a time with the Read tool (mod01.ts through mod24.ts, in order). After reading all of them, tell me which module exports SECRET_ANSWER and quote its value exactly.

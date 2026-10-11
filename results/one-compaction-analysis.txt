@@ -1,0 +1,118 @@
+run | label | ok | grade | cost $ | in+cw | cache read | out | calls | repeat | reread | recall | digest | compactions (ms: before->after)
+api-migration-builtin-1 | builtin | yes | 14/14 | 0.87 | 138k | 774k | 1k | 34 | 1 | 2 | 0 | 0 | 28535ms 128k->57k
+api-migration-builtin-2 | builtin | yes | 14/14 | 0.78 | 135k | 728k | 1k | 34 | 1 | 1 | 0 | 0 | 26325ms 127k->54k
+api-migration-builtin-3 | builtin | yes | 14/14 | 0.89 | 142k | 819k | 1k | 35 | 1 | 2 | 0 | 0 | 26189ms 128k->57k
+api-migration-jetcompact-1 | jetcompact | yes | 14/14 | 0.77 | 145k | 697k | 1k | 43 | 0 | 0 | 0 | 0 | 704ms 129k->65k jev1
+api-migration-jetcompact-2 | jetcompact | yes | 14/14 | 0.72 | 141k | 687k | 1k | 33 | 0 | 0 | 0 | 0 | 612ms 129k->65k jev1
+api-migration-jetcompact-3 | jetcompact | yes | 14/14 | 0.75 | 145k | 691k | 2k | 33 | 0 | 0 | 0 | 0 | 661ms 129k->65k jev1
+api-migration-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 14/14 | 0.81 | 157k | 899k | 1k | 35 | 1 | 2 | 0 | 0 | 373ms 129k->73k
+api-migration-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 14/14 | 1.05 | 204k | 923k | 1k | 58 | 1 | 2 | 0 | 0 | 388ms 129k->73k; 348ms 93k->69k
+api-migration-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 14/14 | 0.76 | 151k | 729k | 1k | 34 | 1 | 2 | 0 | 0 | 380ms 129k->68k
+audit-script-builtin-1 | builtin | yes | 22/22 | 0.30 | 38k | 772k | 2k | 23 | 0 | 0 | 0 | 0 | 
+audit-script-builtin-2 | builtin | yes | 22/22 | 0.28 | 36k | 692k | 2k | 17 | 0 | 0 | 0 | 0 | 
+audit-script-builtin-3 | builtin | yes | 22/22 | 0.30 | 37k | 699k | 1k | 17 | 0 | 0 | 0 | 0 | 
+audit-script-jetcompact-1 | jetcompact | yes | 22/22 | 0.30 | 37k | 779k | 1k | 21 | 0 | 0 | 0 | 0 | 
+audit-script-jetcompact-2 | jetcompact | yes | 22/22 | 0.30 | 40k | 788k | 2k | 23 | 0 | 0 | 0 | 0 | 
+audit-script-jetcompact-3 | jetcompact | yes | 22/22 | 0.30 | 40k | 660k | 1k | 15 | 0 | 0 | 0 | 0 | 
+audit-script-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 22/22 | 0.29 | 38k | 730k | 1k | 20 | 0 | 0 | 0 | 0 | 
+audit-script-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 22/22 | 0.32 | 39k | 716k | 1k | 21 | 0 | 0 | 0 | 0 | 
+audit-script-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 22/22 | 0.28 | 38k | 716k | 2k | 16 | 0 | 0 | 0 | 0 | 
+csv-export-builtin-1 | builtin | yes | 15/15 | 0.92 | 136k | 820k | 2k | 36 | 3 | 4 | 0 | 0 | 25918ms 126k->57k
+csv-export-builtin-2 | builtin | yes | 15/15 | 0.83 | 131k | 850k | 3k | 40 | 2 | 3 | 0 | 0 | 21991ms 126k->49k
+csv-export-builtin-3 | builtin | yes | 15/15 | 0.95 | 140k | 870k | 1k | 37 | 1 | 2 | 0 | 0 | 31031ms 126k->58k
+csv-export-jetcompact-1 | jetcompact | yes | 15/15 | 0.83 | 148k | 917k | 1k | 35 | 0 | 0 | 0 | 0 | 621ms 127k->68k jev1
+csv-export-jetcompact-2 | jetcompact | yes | 15/15 | 0.80 | 149k | 703k | 2k | 31 | 0 | 0 | 0 | 0 | 605ms 127k->72k jev1
+csv-export-jetcompact-3 | jetcompact | yes | 15/15 | 0.82 | 146k | 848k | 1k | 33 | 0 | 0 | 0 | 0 | 587ms 127k->66k jev1
+csv-export-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 15/15 | 0.86 | 154k | 985k | 2k | 37 | 0 | 1 | 0 | 0 | 368ms 127k->71k
+csv-export-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 15/15 | 0.79 | 147k | 786k | 1k | 33 | 0 | 1 | 0 | 0 | 397ms 127k->68k
+csv-export-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 15/15 | 0.85 | 153k | 945k | 2k | 35 | 0 | 1 | 0 | 0 | 398ms 127k->73k
+customer-quirks-builtin-1 | builtin | yes | 18/18 | 0.67 | 90k | 545k | 2k | 30 | 1 | 1 | 0 | 0 | 23920ms 95k->40k
+customer-quirks-builtin-2 | builtin | yes | 18/18 | 0.73 | 100k | 721k | 1k | 28 | 1 | 1 | 0 | 0 | 21274ms 96k->38k
+customer-quirks-builtin-3 | builtin | yes | 18/18 | 0.67 | 92k | 584k | 2k | 31 | 2 | 2 | 0 | 0 | 22533ms 95k->39k
+customer-quirks-jetcompact-1 | jetcompact | yes | 18/18 | 0.66 | 117k | 872k | 2k | 24 | 0 | 0 | 0 | 0 | 509ms 96k->68k jev1
+customer-quirks-jetcompact-2 | jetcompact | yes | 18/18 | 0.71 | 121k | 1032k | 2k | 27 | 0 | 0 | 0 | 0 | 545ms 96k->68k jev1
+customer-quirks-jetcompact-3 | jetcompact | yes | 18/18 | 0.75 | 124k | 1192k | 2k | 29 | 0 | 0 | 0 | 0 | 545ms 96k->68k jev1
+customer-quirks-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 18/18 | 0.70 | 119k | 1037k | 2k | 26 | 0 | 0 | 0 | 0 | 335ms 96k->68k
+customer-quirks-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 18/18 | 0.73 | 121k | 1189k | 2k | 28 | 1 | 1 | 0 | 0 | 342ms 96k->68k
+customer-quirks-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 18/18 | 0.76 | 126k | 1129k | 2k | 32 | 1 | 0 | 0 | 0 | 320ms 96k->67k
+discounts-builtin-1 | builtin | yes | 17/17 | 0.87 | 132k | 989k | 2k | 38 | 0 | 1 | 0 | 0 | 29304ms 125k->48k
+discounts-builtin-2 | builtin | yes | 17/17 | 0.80 | 130k | 728k | 2k | 34 | 0 | 1 | 0 | 0 | 25161ms 125k->49k
+discounts-builtin-3 | builtin | yes | 17/17 | 0.85 | 133k | 803k | 2k | 35 | 0 | 1 | 0 | 0 | 25715ms 125k->48k
+discounts-jetcompact-1 | jetcompact | yes | 17/17 | 0.83 | 147k | 766k | 1k | 33 | 0 | 0 | 0 | 0 | 616ms 126k->68k jev1
+discounts-jetcompact-2 | jetcompact | yes | 17/17 | 0.82 | 149k | 766k | 2k | 33 | 0 | 0 | 0 | 0 | 579ms 127k->69k jev1
+discounts-jetcompact-3 | jetcompact | yes | 17/17 | 0.85 | 153k | 791k | 1k | 34 | 0 | 0 | 0 | 0 | 564ms 126k->72k jev1
+discounts-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 17/17 | 0.98 | 162k | 1205k | 1k | 40 | 0 | 2 | 0 | 0 | 441ms 127k->69k
+discounts-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 17/17 | 0.93 | 160k | 1056k | 2k | 37 | 0 | 1 | 0 | 0 | 369ms 127k->72k
+discounts-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 17/17 | 0.93 | 160k | 1060k | 2k | 37 | 0 | 1 | 0 | 0 | 365ms 127k->73k
+fix-bugs-builtin-1 | builtin | yes | 13/13 | 0.74 | 125k | 724k | 2k | 36 | 1 | 3 | 0 | 0 | 25277ms 125k->48k
+fix-bugs-builtin-2 | builtin | yes | 13/13 | 0.88 | 137k | 827k | 3k | 38 | 2 | 3 | 0 | 0 | 26561ms 126k->57k
+fix-bugs-builtin-3 | builtin | yes | 13/13 | 0.73 | 127k | 660k | 1k | 35 | 1 | 2 | 0 | 0 | 26703ms 125k->49k
+fix-bugs-jetcompact-1 | jetcompact | yes | 13/13 | 0.76 | 142k | 961k | 2k | 35 | 0 | 0 | 0 | 0 | 650ms 127k->68k jev1
+fix-bugs-jetcompact-2 | jetcompact | yes | 13/13 | 0.76 | 148k | 781k | 2k | 32 | 0 | 0 | 0 | 0 | 700ms 127k->72k jev1
+fix-bugs-jetcompact-3 | jetcompact | yes | 13/13 | 0.73 | 143k | 693k | 2k | 32 | 0 | 0 | 0 | 0 | 668ms 127k->66k jev1
+fix-bugs-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 13/13 | 0.75 | 147k | 839k | 2k | 34 | 0 | 1 | 0 | 0 | 387ms 127k->69k
+fix-bugs-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 13/13 | 0.76 | 147k | 859k | 1k | 34 | 0 | 1 | 0 | 0 | 427ms 127k->68k
+fix-bugs-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 13/13 | 0.81 | 152k | 927k | 2k | 35 | 0 | 1 | 0 | 0 | 371ms 127k->69k
+long-conventions-builtin-1 | builtin | yes | 19/19 | 0.95 | 137k | 1771k | 3k | 47 | 2 | 1 | 0 | 0 | 21712ms 130k->49k
+long-conventions-builtin-2 | builtin | yes | 19/19 | 1.29 | 183k | 2535k | 3k | 46 | 2 | 2 | 0 | 0 | 18474ms 131k->49k; 35676ms 94k->42k
+long-conventions-builtin-3 | builtin | yes | 19/19 | 0.93 | 137k | 1741k | 3k | 41 | 1 | 2 | 0 | 0 | 19367ms 131k->49k
+long-conventions-jetcompact-1 | jetcompact | yes | 19/19 | 0.97 | 154k | 1889k | 4k | 40 | 0 | 0 | 0 | 0 | 636ms 131k->63k jev1
+long-conventions-jetcompact-2 | jetcompact | yes | 19/19 | 1.02 | 155k | 2077k | 3k | 52 | 2 | 0 | 0 | 0 | 673ms 131k->62k jev1
+long-conventions-jetcompact-3 | jetcompact | yes | 19/19 | 0.98 | 151k | 2164k | 3k | 48 | 1 | 0 | 0 | 0 | 598ms 131k->62k jev1
+long-conventions-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 19/19 | 0.96 | 153k | 2003k | 3k | 42 | 0 | 1 | 0 | 0 | 397ms 132k->65k
+long-conventions-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 19/19 | 0.98 | 156k | 1930k | 3k | 41 | 0 | 1 | 0 | 0 | 412ms 132k->64k
+long-conventions-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 19/19 | 1.10 | 158k | 2701k | 3k | 53 | 1 | 2 | 0 | 0 | 378ms 132k->65k
+long-latefees-builtin-1 | builtin | yes | 25/25 | 1.11 | 157k | 1917k | 4k | 48 | 3 | 3 | 0 | 0 | 22377ms 130k->53k
+long-latefees-builtin-2 | builtin | yes | 25/25 | 1.21 | 165k | 2209k | 3k | 53 | 2 | 2 | 0 | 0 | 21201ms 131k->53k
+long-latefees-builtin-3 | builtin | yes | 25/25 | 1.12 | 156k | 2079k | 4k | 50 | 3 | 3 | 0 | 0 | 22440ms 131k->53k
+long-latefees-jetcompact-1 | jetcompact | yes | 25/25 | 1.03 | 158k | 2004k | 4k | 44 | 2 | 1 | 0 | 0 | 639ms 131k->63k jev1
+long-latefees-jetcompact-2 | jetcompact | yes | 25/25 | 1.04 | 164k | 1729k | 3k | 42 | 2 | 0 | 0 | 0 | 617ms 132k->63k jev1
+long-latefees-jetcompact-3 | jetcompact | yes | 25/25 | 0.99 | 151k | 1871k | 3k | 39 | 1 | 0 | 0 | 0 | 656ms 131k->63k jev1
+long-latefees-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 25/25 | 1.10 | 163k | 2341k | 3k | 48 | 2 | 1 | 0 | 0 | 380ms 132k->65k
+long-latefees-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 25/25 | 1.20 | 191k | 2084k | 4k | 48 | 1 | 1 | 0 | 1 | 378ms 133k->65k; 385ms 91k->55k digest
+long-latefees-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 25/25 | 1.09 | 166k | 2049k | 4k | 39 | 0 | 0 | 1 | 0 | 379ms 132k->63k
+migration-notes-builtin-1 | builtin | yes | 27/27 | 0.61 | 84k | 1266k | 2k | 31 | 1 | 1 | 0 | 0 | 25881ms 93k->42k
+migration-notes-builtin-2 | builtin | yes | 27/27 | 0.62 | 87k | 1132k | 1k | 29 | 1 | 1 | 0 | 0 | 27909ms 93k->43k
+migration-notes-builtin-3 | builtin | yes | 27/27 | 0.57 | 85k | 956k | 1k | 25 | 1 | 1 | 0 | 0 | 21857ms 93k->42k
+migration-notes-jetcompact-1 | jetcompact | yes | 27/27 | 0.67 | 115k | 1321k | 2k | 26 | 0 | 0 | 0 | 0 | 532ms 95k->70k jev1
+migration-notes-jetcompact-2 | jetcompact | yes | 27/27 | 0.70 | 122k | 1321k | 2k | 25 | 1 | 0 | 1 | 0 | 548ms 94k->73k jev1
+migration-notes-jetcompact-3 | jetcompact | yes | 27/27 | 0.63 | 111k | 937k | 1k | 30 | 0 | 0 | 0 | 0 | 609ms 95k->67k jev1
+migration-notes-jetcompact-algorithmic-1 | jetcompact:algorithmic | yes | 27/27 | 0.68 | 112k | 1444k | 1k | 27 | 0 | 0 | 0 | 0 | 328ms 96k->70k
+migration-notes-jetcompact-algorithmic-2 | jetcompact:algorithmic | yes | 27/27 | 0.63 | 109k | 1154k | 1k | 22 | 0 | 0 | 0 | 0 | 336ms 94k->66k
+migration-notes-jetcompact-algorithmic-3 | jetcompact:algorithmic | yes | 27/27 | 0.72 | 122k | 1497k | 2k | 27 | 0 | 0 | 1 | 0 | 336ms 96k->69k
+
+per arm-variant, mean [min-max]
+label | runs | success | grade share | cost $ | cache write | cache read | output | calls | repeated | rereads | recall | digest | compaction ms | context after compaction
+builtin | 27 | 27/27 | 1.00 [1.00-1.00] | 0.79 [0.28-1.29] | 118k [36k-183k] | 1082k [545k-2535k] | 2k [1k-4k] | 35.1 [17.0-53.0] | 1.2 [0.0-3.0] | 1.7 [0.0-4.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 24933 [18474-35676] | 49k [38k-58k]
+jetcompact | 27 | 27/27 | 1.00 [1.00-1.00] | 0.76 [0.30-1.04] | 130k [36k-164k] | 1109k [660k-2164k] | 2k [1k-4k] | 33.0 [15.0-52.0] | 0.3 [0.0-2.0] | 0.0 [0.0-1.0] | 0.0 [0.0-1.0] | 0.0 [0.0-0.0] | 611 [509-704] | 67k [62k-73k]
+jetcompact:algorithmic | 27 | 27/27 | 1.00 [1.00-1.00] | 0.81 [0.28-1.20] | 137k [38k-204k] | 1257k [716k-2701k] | 2k [1k-4k] | 34.8 [16.0-58.0] | 0.3 [0.0-2.0] | 0.9 [0.0-2.0] | 0.1 [0.0-1.0] | 0.0 [0.0-1.0] | 374 [320-441] | 68k [55k-73k]
+
+per task, mean [min-max]
+task | label | runs | success | grade share | cost $ | rereads | recall | digest
+api-migration | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 0.85 [0.78-0.89] | 1.7 [1.0-2.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+api-migration | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 0.75 [0.72-0.77] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+api-migration | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 0.87 [0.76-1.05] | 2.0 [2.0-2.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+audit-script | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 0.29 [0.28-0.30] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+audit-script | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 0.30 [0.30-0.30] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+audit-script | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 0.30 [0.28-0.32] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+csv-export | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 0.90 [0.83-0.95] | 3.0 [2.0-4.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+csv-export | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 0.81 [0.80-0.83] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+csv-export | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 0.83 [0.79-0.86] | 1.0 [1.0-1.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+customer-quirks | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 0.69 [0.67-0.73] | 1.3 [1.0-2.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+customer-quirks | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 0.70 [0.66-0.75] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+customer-quirks | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 0.73 [0.70-0.76] | 0.3 [0.0-1.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+discounts | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 0.84 [0.80-0.87] | 1.0 [1.0-1.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+discounts | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 0.83 [0.82-0.85] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+discounts | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 0.95 [0.93-0.98] | 1.3 [1.0-2.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+fix-bugs | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 0.78 [0.73-0.88] | 2.7 [2.0-3.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+fix-bugs | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 0.75 [0.73-0.76] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+fix-bugs | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 0.77 [0.75-0.81] | 1.0 [1.0-1.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+long-conventions | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 1.06 [0.93-1.29] | 1.7 [1.0-2.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+long-conventions | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 0.99 [0.97-1.02] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+long-conventions | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 1.01 [0.96-1.10] | 1.3 [1.0-2.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+long-latefees | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 1.14 [1.11-1.21] | 2.7 [2.0-3.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+long-latefees | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 1.02 [0.99-1.04] | 0.3 [0.0-1.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+long-latefees | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 1.13 [1.09-1.20] | 0.7 [0.0-1.0] | 0.3 [0.0-1.0] | 0.3 [0.0-1.0]
+migration-notes | builtin | 3 | 3/3 | 1.00 [1.00-1.00] | 0.60 [0.57-0.62] | 1.0 [1.0-1.0] | 0.0 [0.0-0.0] | 0.0 [0.0-0.0]
+migration-notes | jetcompact | 3 | 3/3 | 1.00 [1.00-1.00] | 0.67 [0.63-0.70] | 0.0 [0.0-0.0] | 0.3 [0.0-1.0] | 0.0 [0.0-0.0]
+migration-notes | jetcompact:algorithmic | 3 | 3/3 | 1.00 [1.00-1.00] | 0.68 [0.63-0.72] | 0.0 [0.0-0.0] | 0.3 [0.0-1.0] | 0.0 [0.0-0.0]

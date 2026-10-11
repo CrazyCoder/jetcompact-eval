@@ -1,0 +1,426 @@
+{
+  "page": 1,
+  "of": 8,
+  "accounts": [
+    {
+      "id": "C1000",
+      "region": "alpine",
+      "billingContact": {
+        "name": "manifest balance",
+        "email": "ap0@example.test"
+      },
+      "paymentTermsDays": 45,
+      "poRequired": false,
+      "statementDay": 1,
+      "deliveryAddress": {
+        "street": "44 voucher street",
+        "city": "exportville",
+        "postcode": "74979"
+      },
+      "notes": [
+        "Dispatch freight transfer export manifest levy contract account journal delivery duty.",
+        "Clearance invoice warehouse audit posting statement delivery manifest batch voucher dispatch.",
+        "Refund receipt customs batch dispatch tariff refund customs export account duty."
+      ]
+    },
+    {
+      "id": "C1001",
+      "region": "baltic",
+      "billingContact": {
+        "name": "deposit manifest",
+        "email": "ap1@example.test"
+      },
+      "paymentTermsDays": 14,
+      "poRequired": true,
+      "statementDay": 24,
+      "deliveryAddress": {
+        "street": "111 invoice street",
+        "city": "settlementville",
+        "postcode": "65570"
+      },
+      "notes": [
+        "Warehouse surcharge voucher statement contract reserve delivery entry refund carrier export.",
+        "Contract import export shipment warehouse warehouse shipment account dispatch deposit levy.",
+        "Audit duty quota statement reserve carrier entry remittance debit refund carrier."
+      ]
+    },
+    {
+      "id": "C1002",
+      "region": "coastal",
+      "billingContact": {
+        "name": "shipment journal",
+        "email": "ap2@example.test"
+      },
+      "paymentTermsDays": 30,
+      "poRequired": false,
+      "statementDay": 24,
+      "deliveryAddress": {
+        "street": "48 duty street",
+        "city": "manifestville",
+        "postcode": "96923"
+      },
+      "notes": [
+        "Clearance customs delivery voucher import payment tariff clearance voucher duty freight.",
+        "Duty transfer credit voucher manifest remittance journal batch invoice statement remittance.",
+        "Batch clearance voucher debit account quota shipment clearance posting manifest deposit."
+      ]
+    },
+    {
+      "id": "C1003",
+      "region": "delta",
+      "billingContact": {
+        "name": "statement delivery",
+        "email": "ap3@example.test"
+      },
+      "paymentTermsDays": 30,
+      "poRequired": false,
+      "statementDay": 28,
+      "deliveryAddress": {
+        "street": "171 debit street",
+        "city": "manifestville",
+        "postcode": "55162"
+      },
+      "notes": [
+        "Voucher voucher invoice invoice levy credit credit customs duty dispatch account.",
+        "Duty clearance freight transfer audit transfer customs payment batch manifest batch.",
+        "Voucher freight export statement balance journal audit statement debit delivery voucher."
+      ]
+    },
+    {
+      "id": "C1004",
+      "region": "eastern",
+      "billingContact": {
+        "name": "debit tariff",
+        "email": "ap4@example.test"
+      },
+      "paymentTermsDays": 14,
+      "poRequired": false,
+      "statementDay": 12,
+      "deliveryAddress": {
+        "street": "195 deposit street",
+        "city": "surchargeville",
+        "postcode": "93977"
+      },
+      "notes": [
+        "Tariff quota remittance journal clearance statement freight period contract reserve journal.",
+        "Receipt audit period customs delivery posting ledger customs manifest receipt invoice.",
+        "Invoice warehouse import clearance receipt voucher deposit ledger refund carrier customs."
+      ]
+    },
+    {
+      "id": "C1005",
+      "region": "fjord",
+      "billingContact": {
+        "name": "ledger ledger",
+        "email": "ap5@example.test"
+      },
+      "paymentTermsDays": 14,
+      "poRequired": true,
+      "statementDay": 21,
+      "deliveryAddress": {
+        "street": "159 shipment street",
+        "city": "accountville",
+        "postcode": "82338"
+      },
+      "notes": [
+        "Account quota shipment levy shipment posting customs credit manifest receipt surcharge.",
+        "Customs tariff voucher customs account export journal entry deposit transfer quota.",
+        "Import duty freight ledger transfer carrier deposit ledger balance shipment journal."
+      ]
+    },
+    {
+      "id": "C1006",
+      "region": "highland",
+      "billingContact": {
+        "name": "shipment credit",
+        "email": "ap6@example.test"
+      },
+      "paymentTermsDays": 30,
+      "poRequired": false,
+      "statementDay": 14,
+      "deliveryAddress": {
+        "street": "16 voucher street",
+        "city": "settlementville",
+        "postcode": "47077"
+      },
+      "notes": [
+        "Account audit receipt quota settlement posting credit settlement levy deposit refund.",
+        "Freight statement export period contract deposit carrier manifest duty receipt customs.",
+        "Balance export reserve levy voucher surcharge settlement shipment account carrier tariff."
+      ]
+    },
+    {
+      "id": "C1007",
+      "region": "island",
+      "billingContact": {
+        "name": "tariff batch",
+        "email": "ap7@example.test"
+      },
+      "paymentTermsDays": 30,
+      "poRequired": true,
+      "statementDay": 22,
+      "deliveryAddress": {
+        "street": "75 carrier street",
+        "city": "tariffville",
+        "postcode": "35642"
+      },
+      "notes": [
+        "Payment clearance balance voucher transfer delivery refund transfer batch shipment clearance.",
+        "Receipt statement dispatch dispatch levy ledger shipment payment delivery reserve settlement.",
+        "Manifest customs import surcharge clearance payment shipment dispatch balance levy credit."
+      ]
+    },
+    {
+      "id": "C1008",
+      "region": "lakes",
+      "billingContact": {
+        "name": "invoice carrier",
+        "email": "ap8@example.test"
+      },
+      "paymentTermsDays": 60,
+      "poRequired": false,
+      "statementDay": 6,
+      "deliveryAddress": {
+        "street": "80 import street",
+        "city": "receiptville",
+        "postcode": "87407"
+      },
+      "notes": [
+        "Contract debit import import export dispatch warehouse duty import posting payment.",
+        "Manifest carrier quota freight manifest entry transfer clearance posting debit export.",
+        "Invoice balance ledger levy customs voucher refund surcharge quota audit contract."
+      ]
+    },
+    {
+      "id": "C1009",
+      "region": "nordic",
+      "billingContact": {
+        "name": "duty reserve",
+        "email": "ap9@example.test"
+      },
+      "paymentTermsDays": 60,
+      "poRequired": false,
+      "statementDay": 23,
+      "deliveryAddress": {
+        "street": "45 clearance street",
+        "city": "reserveville",
+        "postcode": "11767"
+      },
+      "notes": [
+        "Period settlement statement invoice quota shipment posting freight balance surcharge customs.",
+        "Freight duty duty delivery invoice shipment customs receipt posting contract clearance.",
+        "Clearance duty import account export delivery dispatch ledger freight balance refund."
+      ]
+    },
+    {
+      "id": "C1010",
+      "region": "plains",
+      "billingContact": {
+        "name": "dispatch deposit",
+        "email": "ap10@example.test"
+      },
+      "paymentTermsDays": 14,
+      "poRequired": false,
+      "statementDay": 3,
+      "deliveryAddress": {
+        "street": "114 remittance street",
+        "city": "receiptville",
+        "postcode": "67358"
+      },
+      "notes": [
+        "Levy statement transfer quota duty duty surcharge period customs freight entry.",
+        "Customs statement period balance receipt transfer manifest period account import freight.",
+        "Levy balance duty receipt carrier statement posting carrier manifest levy levy."
+      ]
+    },
+    {
+      "id": "C1011",
+      "region": "southern",
+      "billingContact": {
+        "name": "tariff transfer",
+        "email": "ap11@example.test"
+      },
+      "paymentTermsDays": 45,
+      "poRequired": true,
+      "statementDay": 1,
+      "deliveryAddress": {
+        "street": "162 audit street",
+        "city": "dutyville",
+        "postcode": "28611"
+      },
+      "notes": [
+        "Customs freight credit audit quota contract period credit levy entry levy.",
+        "Duty customs freight journal ledger carrier account balance invoice levy tariff.",
+        "Voucher credit invoice payment credit transfer export payment delivery period quota."
+      ]
+    },
+    {
+      "id": "C1012",
+      "region": "alpine",
+      "billingContact": {
+        "name": "surcharge deposit",
+        "email": "ap12@example.test"
+      },
+      "paymentTermsDays": 45,
+      "poRequired": false,
+      "statementDay": 4,
+      "deliveryAddress": {
+        "street": "96 invoice street",
+        "city": "paymentville",
+        "postcode": "52015"
+      },
+      "notes": [
+        "Duty refund payment dispatch carrier account period receipt journal ledger voucher.",
+        "Account dispatch duty period surcharge statement debit manifest period audit tariff.",
+        "Shipment ledger reserve clearance remittance settlement reserve audit remittance manifest statement."
+      ]
+    },
+    {
+      "id": "C1013",
+      "region": "baltic",
+      "billingContact": {
+        "name": "import shipment",
+        "email": "ap13@example.test"
+      },
+      "paymentTermsDays": 60,
+      "poRequired": false,
+      "statementDay": 10,
+      "deliveryAddress": {
+        "street": "118 freight street",
+        "city": "customsville",
+        "postcode": "10865"
+      },
+      "notes": [
+        "Statement remittance credit voucher settlement carrier account payment deposit debit ledger.",
+        "Quota account customs contract account refund account audit reserve refund ledger.",
+        "Reserve manifest refund customs voucher invoice contract contract transfer surcharge credit."
+      ]
+    },
+    {
+      "id": "C1014",
+      "region": "coastal",
+      "billingContact": {
+        "name": "debit voucher",
+        "email": "ap14@example.test"
+      },
+      "paymentTermsDays": 45,
+      "poRequired": false,
+      "statementDay": 1,
+      "deliveryAddress": {
+        "street": "148 export street",
+        "city": "creditville",
+        "postcode": "30902"
+      },
+      "notes": [
+        "Dispatch warehouse carrier duty dispatch surcharge manifest entry entry manifest dispatch.",
+        "Customs warehouse statement batch batch delivery remittance freight audit account transfer.",
+        "Export export settlement credit deposit receipt credit deposit levy refund surcharge."
+      ]
+    },
+    {
+      "id": "C1015",
+      "region": "delta",
+      "billingContact": {
+        "name": "export surcharge",
+        "email": "ap15@example.test"
+      },
+      "paymentTermsDays": 60,
+      "poRequired": false,
+      "statementDay": 17,
+      "deliveryAddress": {
+        "street": "49 dispatch street",
+        "city": "journalville",
+        "postcode": "90617"
+      },
+      "notes": [
+        "Remittance export audit delivery entry payment contract contract period statement remittance.",
+        "Clearance payment batch export delivery export deposit account transfer transfer receipt.",
+        "Invoice clearance deposit deposit quota export transfer reserve balance debit journal."
+      ]
+    },
+    {
+      "id": "C1016",
+      "region": "eastern",
+      "billingContact": {
+        "name": "refund refund",
+        "email": "ap16@example.test"
+      },
+      "paymentTermsDays": 14,
+      "poRequired": false,
+      "statementDay": 14,
+      "deliveryAddress": {
+        "street": "149 contract street",
+        "city": "settlementville",
+        "postcode": "84011"
+      },
+      "notes": [
+        "Surcharge account deposit receipt carrier dispatch audit carrier posting duty quota.",
+        "Batch contract refund quota tariff freight statement freight contract settlement refund.",
+        "Period quota credit customs shipment dispatch account refund surcharge levy duty."
+      ]
+    },
+    {
+      "id": "C1017",
+      "region": "fjord",
+      "billingContact": {
+        "name": "journal quota",
+        "email": "ap17@example.test"
+      },
+      "paymentTermsDays": 60,
+      "poRequired": false,
+      "statementDay": 15,
+      "deliveryAddress": {
+        "street": "160 delivery street",
+        "city": "statementville",
+        "postcode": "66877"
+      },
+      "notes": [
+        "Entry reserve period statement delivery delivery remittance freight surcharge freight carrier.",
+        "Delivery period invoice delivery manifest quota freight debit shipment audit manifest.",
+        "Ledger journal dispatch account balance invoice account levy manifest batch shipment."
+      ]
+    },
+    {
+      "id": "C1018",
+      "region": "highland",
+      "billingContact": {
+        "name": "balance entry",
+        "email": "ap18@example.test"
+      },
+      "paymentTermsDays": 45,
+      "poRequired": true,
+      "statementDay": 20,
+      "deliveryAddress": {
+        "street": "166 import street",
+        "city": "balanceville",
+        "postcode": "26538"
+      },
+      "notes": [
+        "Tariff voucher balance remittance balance balance statement quota batch quota quota.",
+        "Contract voucher contract quota carrier entry deposit export manifest delivery receipt.",
+        "Period journal contract dispatch export refund deposit export refund tariff quota."
+      ]
+    },
+    {
+      "id": "C1019",
+      "region": "island",
+      "billingContact": {
+        "name": "clearance invoice",
+        "email": "ap19@example.test"
+      },
+      "paymentTermsDays": 30,
+      "poRequired": false,
+      "statementDay": 17,
+      "deliveryAddress": {
+        "street": "35 settlement street",
+        "city": "surchargeville",
+        "postcode": "67661"
+      },
+      "notes": [
+        "Credit dispatch period account contract payment quota delivery quota credit duty.",
+        "Entry shipment import clearance warehouse clearance account receipt debit receipt audit.",
+        "Voucher export remittance levy batch manifest shipment surcharge period deposit clearance."
+      ]
+    }
+  ]
+}
