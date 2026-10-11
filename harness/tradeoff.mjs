@@ -25,8 +25,17 @@ const TTL = {
 };
 let PRICE = TTL['1h'];
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const runsDir = join(root, 'runs');
+const arg = (name, fallback) => {
+  const at = process.argv.indexOf(`--${name}`);
+  return at > 0 && process.argv[at + 1] ? process.argv[at + 1] : fallback;
+};
+// --runs <dir> fits from another run folder (an archive); --window, --turns
+// and --base (tokens that never compact: tools, system prompt) shape the
+// projected session.
+const runsDir = arg('runs', join(root, 'runs'));
 const json = process.argv.includes('--json');
+const PROJECT = { window: Number(arg('window', 200_000)), turns: Number(arg('turns', 400)), base: Number(arg('base', 20_000)) };
+const k = (n) => `${Math.round(n / 1000)}k`;
 const parse = (f) => readFileSync(f, 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
 const ctx = (u) => (u.input_tokens ?? 0) + (u.cache_read_input_tokens ?? 0) + (u.cache_creation_input_tokens ?? 0);
 const tok = (chars) => chars / 4;
@@ -128,7 +137,7 @@ const fit = Object.fromEntries(arms.map((arm) => {
  * and seconds, rewrites the cache at the new size, and adds the arm's re-read
  * tokens (also written to cache) plus one extra turn per re-read.
  */
-function simulate(f, { turns = 400, window = 200_000, trigger = 0.6, base = 20_000, out = 600, ratio = f.ratio, expireEvery = 0 } = {}) {
+function simulate(f, { turns = PROJECT.turns, window = PROJECT.window, trigger = 0.6, base = PROJECT.base, out = 600, ratio = f.ratio, expireEvery = 0 } = {}) {
   let c = base;
   let cost = 0;
   let seconds = 0;
@@ -174,7 +183,7 @@ if (json) {
   const ratios = [0.3, 0.4, 0.5, 0.6, 0.7];
   for (const sc of scenarios) {
     PRICE = TTL[sc.ttl];
-    console.log(`\n${sc.label}: projected 400-message session, 200k window (cost $, compaction seconds, compactions)`);
+    console.log(`\n${sc.label}: projected ${PROJECT.turns}-message session, ${k(PROJECT.window)} window, ${k(PROJECT.base)} fixed (cost $, compaction seconds, compactions)`);
     console.log('arm | trigger 50% | 60% | 75% | 90%');
     for (const [arm, f] of Object.entries(fit)) {
       const cells = [0.5, 0.6, 0.75, 0.9].map((trigger) => {
